@@ -18,7 +18,7 @@ app.use(session({
 
 app.get('/', (req,res,next) => {
     req.session.user = {
-        uiud: '12234-2345-2323423'
+        uuid: '12234-2345-2323423'
     }
     req.session.save(err => {
         if(err){
